@@ -1,0 +1,28 @@
+kind: ArangoDeployment
+apiVersion: database.arangodb.com/v1alpha
+metadata:
+  name: arangodb
+  namespace: db
+spec:
+  image: arangodb/arangodb:3.7.7
+  environment: Development
+  mode: Single
+  tls:
+    caSecretName: None
+  externalAccess:
+    type: None
+  bootstrap:
+    passwordSecretNames:
+      root: arango-root
+  metrics:
+    enabled: true
+  single:
+    volumeClaimTemplate:
+      spec:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          requests:
+            storage: 10Gi
+        volumeMode: Filesystem
+    storageClassName: standard2
