@@ -1,6 +1,6 @@
 # Minimum Viable Kube-ArangoDB
 
-This repo demonstrates basic usage of [Kube-ArangoDB](https://github.com/arangodb/kube-arangodb), and uses [Kustomize](https://kustomize.io/) to do it.
+This repo demonstrates basic usage of [Kube-ArangoDB](https://github.com/arangodb/kube-arangodb), and uses [Kustomize](https://kustomize.io/) and [Minikube](https://minikube.sigs.k8s.io/docs/) to do it.
 
 ## Getting started
 
