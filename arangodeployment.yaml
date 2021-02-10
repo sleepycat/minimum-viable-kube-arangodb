@@ -13,7 +13,7 @@ spec:
     type: None
   bootstrap:
     passwordSecretNames:
-      root: arango-root
+      root: arangodb
   metrics:
     enabled: true
   single:
