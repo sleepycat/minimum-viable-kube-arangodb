@@ -34,10 +34,10 @@ NAME                                             STATUS   VOLUME                
 persistentvolumeclaim/arangodb-single-miotcqdv   Bound    pvc-71fee7f0-2387-4985-a551-a79ab8671a34   10Gi       RWO            standard       3m9s
 ```
 
-With that running, you can connect to the admin interface by forwarding the ports to your local machine. The name of the pod will be different for you.
+With that running, you can connect to the admin interface by forwarding the ports to your local machine.
 
 ```
-kubectl port-forward -n db arangodb-sngl-hamld3tu-7c02a6 8529:8529
+kubectl port-forward -n db svc/arangodb 8529:8529
 Forwarding from 127.0.0.1:8529 -> 8529
 Forwarding from [::1]:8529 -> 8529
 ```
